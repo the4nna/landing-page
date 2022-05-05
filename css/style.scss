@@ -11,9 +11,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
 
+    /* HEADER */
     header {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         padding-right: 10px;
         background-color: #665fee;
         background: linear-gradient(45deg, #665fee 0%, #27c2de 100%);
@@ -22,18 +23,18 @@ body {
         .header-text {
             padding: 20px;
             h2 {
-                font-size: 1.8em;
+                font-size: 1.5em;
                 color: white;
                 font-weight: lighter;
             }
             h3 {
-                font-size: 1.8em;
+                font-size: 1.3em;
                 color: white;
                 font-weight: bold;
             }
             p {
                 font-family: 'Open Sans';
-                font-size: 1.1em;
+                font-size: 0.9em;
                 color: white;
                 font-weight: 400;
                 padding-top: 10px;
@@ -71,7 +72,7 @@ body {
                     a {
                         color: rgb(161, 161, 161);
                         text-decoration: none;
-                        font-size: 1.1em;
+                        font-size: 0.8em;
                         font-weight: bold;
                     }
                 }
@@ -79,6 +80,7 @@ body {
         }
     }
 
+        /* MAIN */
         main {
             width: 100%;
             height: 100%;
@@ -104,7 +106,6 @@ body {
                     color: rgb(161, 161, 161);
                 }
             }
-        }
 
             .main-form {
                 display: flex;
@@ -157,15 +158,25 @@ body {
                         box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
                         margin-top: 35px;
                         padding: 8px;
+                        cursor: pointer;
+
+
+                        &:hover {
+                            background-color: #2833cefb;
+                            box-shadow: 0px 3px 11px 0px #2833cefb;
+                        }
                     }
                 }
         }
+    }
 }
+
+
 
 @media (min-width: 320px) and (max-width: 375px) {
     body {
         header {
-            height: 100vh;
+            height: 80vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
         }
     }
@@ -174,7 +185,7 @@ body {
 @media (min-width: 425px) and (max-width: 768px) {
     body {
         header {
-            height: 75vh;
+            height: 60vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
         }
     }

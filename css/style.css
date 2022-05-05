@@ -9,11 +9,13 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
+  /* HEADER */
+  /* MAIN */
 }
 
 body header {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   padding-right: 10px;
   background-color: #665fee;
   background: linear-gradient(45deg, #665fee 0%, #27c2de 100%);
@@ -26,20 +28,20 @@ body header .header-text {
 }
 
 body header .header-text h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
   font-weight: lighter;
 }
 
 body header .header-text h3 {
-  font-size: 1.8em;
+  font-size: 1.3em;
   color: white;
   font-weight: bold;
 }
 
 body header .header-text p {
   font-family: 'Open Sans';
-  font-size: 1.1em;
+  font-size: 0.9em;
   color: white;
   font-weight: 400;
   padding-top: 10px;
@@ -92,7 +94,7 @@ body header .header-nav nav li:nth-child(4n) {
 body header .header-nav nav li a {
   color: #a1a1a1;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 0.8em;
   font-weight: bold;
 }
 
@@ -130,7 +132,7 @@ body main .main-text p {
   color: #a1a1a1;
 }
 
-body .main-form {
+body main .main-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +142,7 @@ body .main-form {
   margin: 20px 20px;
 }
 
-body .main-form form {
+body main .main-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,14 +158,14 @@ body .main-form form {
           box-shadow: 0px 4px 16px 0px #00000029;
 }
 
-body .main-form form h2 {
+body main .main-form form h2 {
   font-size: 1.3em;
   color: grey;
   text-align: center;
   margin-bottom: 11px;
 }
 
-body .main-form form input {
+body main .main-form form input {
   font-family: 'Montserrat';
   background-color: #dfdfdf;
   -webkit-box-shadow: 0px 2px 10px 0px #00000029;
@@ -173,7 +175,7 @@ body .main-form form input {
   border-radius: 2px;
 }
 
-body .main-form form select {
+body main .main-form form select {
   font-family: 'Montserrat';
   background-color: #dfdfdf;
   -webkit-box-shadow: 0px 2px 10px 0px #00000029;
@@ -183,7 +185,7 @@ body .main-form form select {
   border-radius: 2px;
 }
 
-body .main-form form button {
+body main .main-form form button {
   border: none;
   background-color: #1d82ff;
   color: white;
@@ -194,11 +196,18 @@ body .main-form form button {
           box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
   margin-top: 35px;
   padding: 8px;
+  cursor: pointer;
+}
+
+body main .main-form form button:hover {
+  background-color: #2833cefb;
+  -webkit-box-shadow: 0px 3px 11px 0px #2833cefb;
+          box-shadow: 0px 3px 11px 0px #2833cefb;
 }
 
 @media (min-width: 320px) and (max-width: 375px) {
   body header {
-    height: 100vh;
+    height: 80vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
@@ -206,7 +215,7 @@ body .main-form form button {
 
 @media (min-width: 425px) and (max-width: 768px) {
   body header {
-    height: 75vh;
+    height: 60vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
