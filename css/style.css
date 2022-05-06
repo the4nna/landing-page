@@ -266,7 +266,7 @@ body main .main-form form button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 60px;
+  margin-top: 75px;
 }
 
 #shareSection .section-form form {
