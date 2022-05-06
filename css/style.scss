@@ -121,7 +121,7 @@ body {
                 box-shadow: 0px 4px 16px 0px #00000029;
 
                 h2 {
-                    font-size: 1.3em;
+                    font-size: 1.1em;
                     color: grey;
                     text-align: center;
                     margin-bottom: 11px;                    
@@ -192,17 +192,21 @@ body {
     #shareSection {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 90vh;
         padding: 30px;
         background-color: white;
 
         .section-text {
+            margin-top: -40px;
+            padding: 0px 35px;
+
             h2 {
+                display: flex;
                 font-size: 1.1em;
                 color: grey;
                 i {
                     color: #27c2de;
-                    margin: 8px;
+                    margin: 4px 8px;
                 }
         }
             p {
@@ -215,15 +219,15 @@ body {
         .section-form {
             display: flex;
             justify-content: center;
-            margin-top: 75px;
+            margin-top: 65px;
 
             form {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                width: 70vw;
+                width: 65vw;
                 height: 50vh;
-                padding: 20px;
+                padding: 30px;
                 background-color: white;
                 box-shadow: 0px 4px 16px 0px #00000029;
 
@@ -236,8 +240,7 @@ body {
                 }
 
                 label {
-                    font-size: 0.9em;
-                    font-family: 'Open Sans';
+                    font-size: 0.8em;
                     color: darkslategray;
                 }
 

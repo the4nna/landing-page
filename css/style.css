@@ -158,7 +158,7 @@ body main .main-form form {
 }
 
 body main .main-form form h2 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: grey;
   text-align: center;
   margin-bottom: 11px;
@@ -237,19 +237,27 @@ body main .main-form form button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   padding: 30px;
   background-color: white;
 }
 
+#shareSection .section-text {
+  margin-top: -40px;
+  padding: 0px 35px;
+}
+
 #shareSection .section-text h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 1.1em;
   color: grey;
 }
 
 #shareSection .section-text h2 i {
   color: #27c2de;
-  margin: 8px;
+  margin: 4px 8px;
 }
 
 #shareSection .section-text p {
@@ -266,7 +274,7 @@ body main .main-form form button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 75px;
+  margin-top: 65px;
 }
 
 #shareSection .section-form form {
@@ -280,9 +288,9 @@ body main .main-form form button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70vw;
+  width: 65vw;
   height: 50vh;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   -webkit-box-shadow: 0px 4px 16px 0px #00000029;
           box-shadow: 0px 4px 16px 0px #00000029;
@@ -297,8 +305,7 @@ body main .main-form form button:hover {
 }
 
 #shareSection .section-form form label {
-  font-size: 0.9em;
-  font-family: 'Open Sans';
+  font-size: 0.8em;
   color: darkslategray;
 }
 
