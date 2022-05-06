@@ -16,7 +16,6 @@ body {
 body header {
   width: 100%;
   height: 60vh;
-  padding-right: 10px;
   background-color: #665fee;
   background: linear-gradient(45deg, #665fee 0%, #27c2de 100%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 260% 35%, 0 88%);
@@ -74,21 +73,21 @@ body header .header-nav nav ul {
 
 body header .header-nav nav li {
   list-style: none;
-  padding: 7px 20px;
-  margin-bottom: 10px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
   background: #fffffffa;
-  border: 1.5px solid #665fee;
-  -webkit-box-shadow: 0px 3px 8px #00000029;
-          box-shadow: 0px 3px 8px #00000029;
+  border: 1px solid #665fee;
+  -webkit-box-shadow: 0px 6px 14px #630b915c;
+          box-shadow: 0px 6px 14px #630b915c;
   border-radius: 8px;
 }
 
 body header .header-nav nav li:nth-child(3n) {
-  padding-left: 28px;
+  padding: 6px 13px;
 }
 
 body header .header-nav nav li:nth-child(4n) {
-  padding: 7px 45px;
+  padding: 6px 28px;
 }
 
 body header .header-nav nav li a {
@@ -243,8 +242,7 @@ body main .main-form form button:hover {
 }
 
 #shareSection .section-text {
-  margin-top: -40px;
-  padding: 0px 35px;
+  margin-top: -30px;
 }
 
 #shareSection .section-text h2 {
@@ -274,7 +272,7 @@ body main .main-form form button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 65px;
+  margin-top: 60px;
 }
 
 #shareSection .section-form form {
@@ -356,7 +354,7 @@ footer p {
 /* MEDIA QUERIES */
 @media (min-width: 320px) and (max-width: 375px) {
   body header {
-    height: 80vh;
+    height: 75vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }

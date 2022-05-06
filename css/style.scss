@@ -15,7 +15,6 @@ body {
     header {
         width: 100%;
         height: 60vh;
-        padding-right: 10px;
         background-color: #665fee;
         background: linear-gradient(45deg, #665fee 0%, #27c2de 100%);
         clip-path: polygon(0 0, 100% 0%, 260% 35%, 0 88%);
@@ -56,18 +55,18 @@ body {
 
                 li {
                     list-style: none;
-                    padding: 7px 20px;
-                    margin-bottom: 10px;
+                    padding: 6px 10px;
+                    margin-bottom: 8px;
                     background: #fffffffa;
-                    border: 1.5px solid #665fee;
-                    box-shadow: 0px 3px 8px #00000029;
+                    border: 1px solid #665fee;
+                    box-shadow: 0px 6px 14px #630b915c;
                     border-radius: 8px;
 
                     &:nth-child(3n) {
-                        padding-left: 28px;
+                        padding: 6px 13px;
                     }
                     &:nth-child(4n) {
-                        padding: 7px 45px;
+                        padding: 6px 28px;
                     }
                     a {
                         color: rgb(161, 161, 161);
@@ -197,8 +196,7 @@ body {
         background-color: white;
 
         .section-text {
-            margin-top: -40px;
-            padding: 0px 35px;
+            margin-top: -30px;
 
             h2 {
                 display: flex;
@@ -213,13 +211,13 @@ body {
                 font-family: 'Open Sans';
                 font-size: 0.9em;
                 margin-top: 5px;
-                color: rgb(161, 161, 161);
+                color: #a1a1a1;
         }
     }
         .section-form {
             display: flex;
             justify-content: center;
-            margin-top: 65px;
+            margin-top: 60px;
 
             form {
                 display: flex;
@@ -292,7 +290,7 @@ body {
 @media (min-width: 320px) and (max-width: 375px) {
     body {
         header {
-            height: 80vh;
+            height: 75vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
         }
     }
