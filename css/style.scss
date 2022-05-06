@@ -169,7 +169,7 @@ body {
 }
 
     /* PRODUCT SECTION */
-    section {
+    #productSection {
         display: flex;
         height: 100vh;
         margin-top: 50px;
@@ -188,8 +188,101 @@ body {
         }
     }
 
+    /* SHARE SECTION */ 
+    #shareSection {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 30px;
+        background-color: white;
 
+        .section-text {
+            h2 {
+                font-size: 1.1em;
+                color: grey;
+                i {
+                    color: #27c2de;
+                    margin: 8px;
+                }
+        }
+            p {
+                font-family: 'Open Sans';
+                font-size: 0.9em;
+                margin-top: 5px;
+                color: rgb(161, 161, 161);
+        }
+    }
+        .section-form {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
 
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 70vw;
+                height: 50vh;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0px 4px 16px 0px #00000029;
+
+                h2 {
+                    font-size: 1.1em;
+                    color: grey;
+                    text-align: center;
+                    margin-top: -20px;
+                    margin-bottom: 40px;
+                }
+
+                label {
+                    font-size: 0.9em;
+                    font-family: 'Open Sans';
+                    color: darkslategray;
+                }
+
+                input {
+                    background-color: #ededed;
+                    box-shadow: 0px 2px 10px 0px #00000029;
+                    border: none;
+                    padding: 6px;
+                    border-radius: 2px;
+                }
+
+                button {
+                    border: none;
+                    background-color: #1d82ff;
+                    color: white;
+                    font-family: 'Montserrat';
+                    font-size: 0.9em;
+                    border-radius: 20px;
+                    box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
+                    margin-top: 20px;
+                    margin-bottom: -20px;
+                    padding: 8px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #2833cefb;
+                        box-shadow: 0px 3px 11px 0px #2833cefb;
+                    }
+                }
+            }
+        }
+}
+
+    footer {
+        padding-top: 65px;
+        background-color: #ededed;
+        clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+
+        p {
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 0.7em;
+            color: darkslategray;
+        }
+    }
 
 
 /* MEDIA QUERIES */
