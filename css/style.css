@@ -355,6 +355,14 @@ footer p {
   }
 }
 
+@media (width: 375px) {
+  body header {
+    height: 65vh;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
+            clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
+  }
+}
+
 @media (min-width: 425px) and (max-width: 768px) {
   body header {
     height: 60vh;
