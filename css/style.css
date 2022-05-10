@@ -375,4 +375,60 @@ footer p {
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
 }
+
+@media (min-width: 769px) {
+  body header {
+    height: 40vh;
+  }
+  body header .header-nav nav li {
+    margin-right: 6px;
+  }
+  body main {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 80px;
+  }
+  body main .main-text {
+    width: 45vw;
+    word-break: break-word;
+  }
+  body main .main-form {
+    width: 35vw;
+  }
+  body #productSection {
+    padding: 30px 105px;
+  }
+  body #shareSection {
+    height: 60vh;
+    margin: 20px 80px;
+  }
+  body #shareSection .section-form {
+    margin-top: 50px;
+  }
+  body #shareSection .section-form form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-align: start;
+    height: 45vh;
+    width: 40vw;
+  }
+  body #shareSection .section-form form h2 {
+    text-align: center;
+  }
+  body #shareSection .section-form form input {
+    height: 30px;
+  }
+  body #shareSection .section-form form button {
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
