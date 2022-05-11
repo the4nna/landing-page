@@ -169,7 +169,7 @@ body {
 
     /* PRODUCT SECTION */
     #productSection {
-        display: flex;
+        display: grid;
         height: 100vh;
         margin-top: 50px;
         padding: 30px;
@@ -184,6 +184,15 @@ body {
             color: #27c2de;
             margin: 4px 6px;
             font-size: 1em;
+        }
+
+        #productsContainer {
+            display: grid;
+
+            .productImg {
+                width: 100px;
+                border: 1px solid black;
+            }
         }
     }
 

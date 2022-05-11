@@ -205,9 +205,8 @@ body main .main-form form button:hover {
 
 /* PRODUCT SECTION */
 #productSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   height: 100vh;
   margin-top: 50px;
   padding: 30px;
@@ -225,6 +224,16 @@ body main .main-form form button:hover {
   color: #27c2de;
   margin: 4px 6px;
   font-size: 1em;
+}
+
+#productSection #productsContainer {
+  display: -ms-grid;
+  display: grid;
+}
+
+#productSection #productsContainer .productImg {
+  width: 100px;
+  border: 1px solid black;
 }
 
 /* SHARE SECTION */
