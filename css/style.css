@@ -205,12 +205,10 @@ body main .main-form form button:hover {
 
 /* PRODUCT SECTION */
 #productSection {
-  display: -ms-grid;
-  display: grid;
-  height: 100vh;
+  height: 1750px;
   margin-top: 50px;
   padding: 30px;
-  background-color: #ededed;
+  background-color: white;
   -webkit-clip-path: polygon(0 0, 100% 0%, 270% 40%, 0 95%);
           clip-path: polygon(0 0, 100% 0%, 270% 40%, 0 95%);
 }
@@ -218,6 +216,7 @@ body main .main-form form button:hover {
 #productSection h2 {
   font-size: 1.1em;
   color: #525252;
+  margin-bottom: 20px;
 }
 
 #productSection i {
@@ -226,14 +225,50 @@ body main .main-form form button:hover {
   font-size: 1em;
 }
 
-#productSection #productsContainer {
-  display: -ms-grid;
-  display: grid;
+#productSection #productsContainer .productDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55vw;
+  height: 240px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 4px 16px 0px #00000029;
+          box-shadow: 0px 4px 16px 0px #00000029;
 }
 
-#productSection #productsContainer .productImg {
+#productSection #productsContainer .productDiv .productImg {
   width: 100px;
-  border: 1px solid black;
+}
+
+#productSection #productsContainer .productDiv .productName {
+  font-size: 1em;
+}
+
+#productSection #productsContainer .productDiv .productDescription {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+#productSection #productsContainer .productDiv .buyButton {
+  border: none;
+  background-color: #1d82ff;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 0.8em;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
+          box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
+  margin-top: 5px;
+  padding: 5px 35px;
+  cursor: pointer;
 }
 
 /* SHARE SECTION */

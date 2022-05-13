@@ -4,35 +4,21 @@ function htmlProducts(data) {
     const productList = data.products
     productsContainer.innerHTML = ''
     productList.forEach(product => {
-        const productImg = document.createElement("img")
-        const productName = document.createElement("h3")
-        const productDescription = document.createElement("p")
-        //const oldPrice = document.createElement("span")
-        //const price = document.createElement("span")
+        const productDiv = document.createElement("div")
         //const installments = document.createElement("span")
-        const buyButton = document.createElement("button")
 
-        productImg.classList.add('productImg')
-        productName.classList.add('productName')
-        productDescription.classList.add('productDescription')
-        buyButton.classList.add('buyButton')
+        productDiv.classList.add('productDiv')
+    
+        productDiv.innerHTML = `
+        <img src="${product.image}" class="productImg">  <img> 
+        <h3 class="productName"> ${product.name} </h3> 
+        <p class="productDescription"> ${product.description} </p> 
+        <span class="productPrice"> <s> $ ${product.oldPrice}.00 </s> </span> 
+        <span class="productPrice"> $ ${product.price}.00 </span> 
+        <button class="buyButton"> Comprar </button>`
 
-        productImg.src = product.image
-        productName.innerHTML = product.name
-        productDescription.innerHTML = product.description
-        //oldPrice.innerHTML = product.oldPrice
-        //price.innerHTML = product.price
-        //installments.innerHTML = product.installments
-        buyButton.innerHTML = "Comprar"
 
-        productsContainer.appendChild(productImg)
-        productsContainer.appendChild(productName)
-        productsContainer.appendChild(productDescription)
-        //productsContainer.appendChild(oldPrice)
-        //productsContainer.appendChild(price)
-        //productsContainer.appendChild(installments)
-        productsContainer.appendChild(buyButton)
-
+        productsContainer.appendChild(productDiv)
     });
 }
 
@@ -43,7 +29,8 @@ function errorEvt() {
 }
 
 
-window.onload = () =>
+window.onload = (e) =>
+    e.preventDefault()
     urlLoad()
     .then(htmlProducts)
     .catch(errorEvt)
