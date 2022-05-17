@@ -1,5 +1,6 @@
 const productsContainer = document.getElementById("productsContainer")
 
+
 function htmlProducts(data) {
     const productList = data.products
     productsContainer.innerHTML = ''
@@ -10,18 +11,33 @@ function htmlProducts(data) {
         productDiv.classList.add('productDiv')
     
         productDiv.innerHTML = `
+        <div id="installmentDiv"> </div>
         <img src="${product.image}" class="productImg">  <img> 
         <h3 class="productName"> ${product.name} </h3> 
         <p class="productDescription"> ${product.description} </p> 
-        <span class="productPrice"> <s> $ ${product.oldPrice}.00 </s> </span> 
+        <span class="productPrice"> <s> $ ${product.oldPrice}.00 </s> </span> <button id="installmentButton" onclick="installmentPop()"> <i class="fa-solid fa-percent"></i> </button>
         <span class="productPrice"> $ ${product.price}.00 </span> 
-        <button class="buyButton"> Comprar </button>`
-
-
+        <button class="buyButton"> Comprar </button>
+        `
+        
         productsContainer.appendChild(productDiv)
+
+
     });
 }
 
+
+function installmentPop(data) {
+    const installmentDiv = document.getElementById("installmentDiv")
+    installmentDiv.style.display = 'block'
+
+    const installmentList = data.products
+    installmentDiv.innerHTML = ''
+
+    installmentList[0].installments.forEach(installment => {
+        installmentDiv.innerHTML = `<h3> ${installment.count} </h3>`
+    });
+}
 
 
 function errorEvt() {

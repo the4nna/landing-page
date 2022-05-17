@@ -173,7 +173,7 @@ body {
         margin-top: 50px;
         padding: 30px;
         background-color: white;
-        clip-path: polygon(0 0, 100% 0%, 270% 40%, 0 95%);
+        clip-path: polygon(0 0, 100% 0%, 270% 110%, 0 95%);
 
         h2 {
             font-size: 1.1em;
@@ -193,7 +193,7 @@ body {
                 flex-direction: column;
                 align-items: center;
                 width: 55vw;
-                height: 240px;
+                height: 250px;
                 margin: 0 auto;
                 margin-bottom: 20px;
                 box-shadow: 0px 4px 16px 0px #00000029;
@@ -211,6 +211,13 @@ body {
                 font-weight: lighter;
             }
 
+            .productPrice {
+                font-size: 0.9em;
+                &:last-of-type{
+                    margin-top: -20px;
+                }
+            }
+
             .buyButton {
                 border: none;
                 background-color: #1d82ff;
@@ -223,6 +230,24 @@ body {
                 padding: 5px 35px;
                 cursor: pointer;
             }
+
+            #installmentButton {
+                border: none;
+                background: transparent;
+                align-self: flex-end;
+                margin-right: 15px;
+                cursor: pointer;
+            }
+        }
+        #installmentDiv {
+            position: fixed;
+            display: none;
+            top: 0; bottom: 0; left: 0; right: 0;
+            margin: auto;
+            width: 200px;
+            height: 180px;
+            padding: 15px;
+            background-color: red;
         }
     }
 }

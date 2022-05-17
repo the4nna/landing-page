@@ -209,8 +209,8 @@ body main .main-form form button:hover {
   margin-top: 50px;
   padding: 30px;
   background-color: white;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 270% 40%, 0 95%);
-          clip-path: polygon(0 0, 100% 0%, 270% 40%, 0 95%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 270% 110%, 0 95%);
+          clip-path: polygon(0 0, 100% 0%, 270% 110%, 0 95%);
 }
 
 #productSection h2 {
@@ -237,7 +237,7 @@ body main .main-form form button:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 55vw;
-  height: 240px;
+  height: 250px;
   margin: 0 auto;
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 4px 16px 0px #00000029;
@@ -257,6 +257,14 @@ body main .main-form form button:hover {
   font-weight: lighter;
 }
 
+#productSection #productsContainer .productDiv .productPrice {
+  font-size: 0.9em;
+}
+
+#productSection #productsContainer .productDiv .productPrice:last-of-type {
+  margin-top: -20px;
+}
+
 #productSection #productsContainer .productDiv .buyButton {
   border: none;
   background-color: #1d82ff;
@@ -269,6 +277,29 @@ body main .main-form form button:hover {
   margin-top: 5px;
   padding: 5px 35px;
   cursor: pointer;
+}
+
+#productSection #productsContainer .productDiv #installmentButton {
+  border: none;
+  background: transparent;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#productSection #productsContainer #installmentDiv {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 180px;
+  padding: 15px;
+  background-color: red;
 }
 
 /* SHARE SECTION */
