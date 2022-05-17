@@ -169,7 +169,7 @@ body {
 
     /* PRODUCT SECTION */
     #productSection {
-        height: 1750px;
+        height: 2380px;
         margin-top: 50px;
         padding: 30px;
         background-color: white;
@@ -194,6 +194,7 @@ body {
                 align-items: center;
                 width: 55vw;
                 height: 250px;
+                padding: 0px 10px;
                 margin: 0 auto;
                 margin-bottom: 20px;
                 box-shadow: 0px 4px 16px 0px #00000029;
@@ -248,6 +249,25 @@ body {
             height: 180px;
             padding: 15px;
             background-color: red;
+        }
+    }
+
+    .divNextPage {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+
+        #buttonNextPage {
+            border: none;
+            background-color: #1d82ffb5;
+            color: white;
+            font-family: 'Montserrat';
+            font-size: 0.8em;
+            border-radius: 20px;
+            box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
+            margin-top: 5px;
+            padding: 10px 50px;
+            cursor: pointer;
         }
     }
 }

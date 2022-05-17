@@ -6,7 +6,7 @@ function htmlProducts(data) {
     productsContainer.innerHTML = ''
     productList.forEach(product => {
         const productDiv = document.createElement("div")
-        //const installments = document.createElement("span")
+
 
         productDiv.classList.add('productDiv')
     
@@ -26,6 +26,9 @@ function htmlProducts(data) {
     });
 }
 
+function returnJSON(response) {
+    return response.json()
+}
 
 function installmentPop(data) {
     const installmentDiv = document.getElementById("installmentDiv")
@@ -45,15 +48,30 @@ function errorEvt() {
 }
 
 
-window.onload = (e) =>
+
+let page = 0
+async function urlLoad() {
+    page++
+    const data = await fetch(`https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}`)
+        .then(returnJSON)
+        .then(htmlProducts)
+        .catch(errorEvt)
+
+        return data
+}
+
+
+
+/*window.onload = (e) =>
     e.preventDefault()
     urlLoad()
     .then(htmlProducts)
     .catch(errorEvt)
+*/
 
-
-function urlLoad() {
+/*function urlLoad() {
     return new Promise((resolve, reject) => {
+        let page = 0
         const xhttp = new XMLHttpRequest()
 
         xhttp.onreadystatechange = function() {
@@ -64,10 +82,14 @@ function urlLoad() {
                 reject()
             }
         }
-        xhttp.open('GET', "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1", true)
+        
+        xhttp.open('GET', `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}`, true)
         xhttp.send()
+        page++
+        
     })
 }
 
+urlLoad()
 
-console.log(urlLoad())
+*/
