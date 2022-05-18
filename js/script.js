@@ -11,18 +11,23 @@ function htmlProducts(data) {
         productDiv.classList.add('productDiv')
     
         productDiv.innerHTML = `
-        <div id="installmentDiv"> </div>
         <img src="${product.image}" class="productImg">  <img> 
         <h3 class="productName"> ${product.name} </h3> 
         <p class="productDescription"> ${product.description} </p> 
-        <span class="productPrice"> <s> $ ${product.oldPrice}.00 </s> </span> <button id="installmentButton" onclick="installmentPop()"> <i class="fa-solid fa-percent"></i> </button>
+        <span class="productPrice"> <s> $ ${product.oldPrice}.00 </s> </span> <br>
         <span class="productPrice"> $ ${product.price}.00 </span> 
         <button class="buyButton"> Comprar </button>
         `
         
+        const buttonInstallment = document.createElement('button')
+        buttonInstallment.classList.add('installmentButton')
+        buttonInstallment.innerHTML = '<i class="fa-solid fa-percent"></i>'
+        productDiv.appendChild(buttonInstallment)
+        buttonInstallment.addEventListener('click', function() {
+            installmentPop(product.installments)
+        })
+
         productsContainer.appendChild(productDiv)
-
-
     });
 }
 
@@ -30,18 +35,20 @@ function returnJSON(response) {
     return response.json()
 }
 
-function installmentPop(data) {
+function installmentPop(installment) {
     const installmentDiv = document.getElementById("installmentDiv")
     installmentDiv.style.display = 'block'
-
-    const installmentList = data.products
+    
     installmentDiv.innerHTML = ''
 
-    installmentList[0].installments.forEach(installment => {
-        installmentDiv.innerHTML = `<h3> ${installment.count} </h3>`
-    });
+    installmentDiv.innerHTML = `<h3> ${installment.count} ${installment.value}</h3>`
 }
 
+const installmentDiv = document.getElementById("installmentDiv")
+installmentDiv.addEventListener('click', function(e){
+    e.currentTarget.style.display = 'none'
+    e.currentTarget.innerHTML = ''
+}) 
 
 function errorEvt() {
     alert('Aconteceu um erro')
@@ -49,29 +56,23 @@ function errorEvt() {
 
 
 
-let page = 0
-async function urlLoad() {
+let page = 1
+function loadMore() {
     page++
-    const data = await fetch(`https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}`)
-        .then(returnJSON)
-        .then(htmlProducts)
-        .catch(errorEvt)
-
-        return data
+    urlLoad(page)
+    .then(htmlProducts)
 }
 
 
-
-/*window.onload = (e) =>
+window.onload = (e) =>
     e.preventDefault()
-    urlLoad()
+    urlLoad(1)
     .then(htmlProducts)
     .catch(errorEvt)
-*/
 
-/*function urlLoad() {
+
+function urlLoad(pageNumber) {
     return new Promise((resolve, reject) => {
-        let page = 0
         const xhttp = new XMLHttpRequest()
 
         xhttp.onreadystatechange = function() {
@@ -83,13 +84,10 @@ async function urlLoad() {
             }
         }
         
-        xhttp.open('GET', `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}`, true)
+        xhttp.open('GET', `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${pageNumber}`, true)
         xhttp.send()
-        page++
-        
     })
 }
 
-urlLoad()
 
-*/
+

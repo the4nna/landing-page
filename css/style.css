@@ -280,27 +280,13 @@ body main .main-form form button:hover {
   cursor: pointer;
 }
 
-#productSection #productsContainer .productDiv #installmentButton {
+#productSection #productsContainer .productDiv .installmentButton {
   border: none;
   background: transparent;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 15px;
   cursor: pointer;
-}
-
-#productSection #productsContainer #installmentDiv {
-  position: fixed;
-  display: none;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 200px;
-  height: 180px;
-  padding: 15px;
-  background-color: red;
 }
 
 #productSection .divNextPage {
@@ -325,6 +311,20 @@ body main .main-form form button:hover {
   margin-top: 5px;
   padding: 10px 50px;
   cursor: pointer;
+}
+
+#productSection #installmentDiv {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 180px;
+  padding: 15px;
+  background-color: red;
 }
 
 /* SHARE SECTION */
