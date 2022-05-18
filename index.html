@@ -36,11 +36,11 @@
         </div>
 
         <div class="main-form">
-                <form action="get" role="form" aria-label="Formulário">
+                <form action="get" role="form" aria-label="Formulário" id="registerForm">
                 <h2> Inscreva-se </h2>
-                <input type="text" id="name" placeholder="Nome"> <br>
-                <input type="text" id="email" placeholder="E-mail"> <br>
-                <input type="text" id="cpf" placeholder="CPF"> <br>
+                <input type="text" name="name" placeholder="Nome"> <br>
+                <input type="text" name="email" placeholder="E-mail"> <br>
+                <input type="text" name="cpf" placeholder="CPF"> <br>
                 <select name="gender" id="gender">
                     <option value=""> Gênero </option>
                     <option value="masc"> Masculino </option>
@@ -53,12 +53,18 @@
 
     <section role="contentinfo" aria-label="Produtos" id="productSection"> 
         <h2> Seus produtos <a href="#productSection"> <i class="fa-solid fa-angle-down"></i> </a> </h2>
-        <div id="productsContainer">          
-        </div>
+        <div id="productsContainer">     
+            <div class="productDiv">
+                <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=5783178" class="productImg">  <img> 
+                <h3 class="productName"> Product Number 0 </h3> 
+                <p class="productDescription"> Product long description number 0 just to make more than one like of text. </p>
+                <span class="productPrice"> <s> $ 237.00 </s> </span> <br>
+                <span class="productPrice"> $ 191.00 </span> 
+                <button class="buyButton"> Comprar </button>
+                </div>
         <div class="divNextPage">
             <button id="buttonNextPage" onclick="loadMore()" type="submit"> Mais produtos </button>
         </div>
-        <div id="installmentDiv"> </div>
     </section>
 
     <section role="contentinfo" aria-label="Compartilhar" id="shareSection">
@@ -68,12 +74,12 @@
         </div>
 
         <div class="section-form">
-            <form action="get" role="form" aria-label="Formulário">
+            <form action="get" role="form" aria-label="Formulário" id="shareForm">
                 <h2> Compartilhar </h2>
                 <label for="name"> Nome do seu amigo </label>
-                <input type="text" id="name"> <br>
+                <input type="text" name="name"> <br>
                 <label for="name"> E-mail dele </label> 
-                <input type="text" id="email"> <br>
+                <input type="text" name="email"> <br>
                 <button type="submit" id="submitBtn"> Enviar agora </button>
             </form>
         </div>

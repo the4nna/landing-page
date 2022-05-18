@@ -15,7 +15,7 @@ body {
 
 body header {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background-color: #665fee;
   background: linear-gradient(45deg, #665fee 0%, #27c2de 100%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 260% 35%, 0 88%);
@@ -173,6 +173,12 @@ body main .main-form form input {
   border-radius: 2px;
 }
 
+body main .main-form form .inputError {
+  border: 1px solid red;
+  -webkit-box-shadow: 0px 2px 5px 0px #ff00004f;
+          box-shadow: 0px 2px 5px 0px #ff00004f;
+}
+
 body main .main-form form select {
   font-family: 'Montserrat';
   background-color: #ededed;
@@ -285,7 +291,8 @@ body main .main-form form button:hover {
   background: transparent;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-right: 15px;
+  margin-top: -58px;
+  margin-right: 45px;
   cursor: pointer;
 }
 
@@ -311,20 +318,6 @@ body main .main-form form button:hover {
   margin-top: 5px;
   padding: 10px 50px;
   cursor: pointer;
-}
-
-#productSection #installmentDiv {
-  position: fixed;
-  display: none;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 200px;
-  height: 180px;
-  padding: 15px;
-  background-color: red;
 }
 
 /* SHARE SECTION */
@@ -416,6 +409,12 @@ body main .main-form form button:hover {
   border-radius: 2px;
 }
 
+#shareSection .section-form form .inputError {
+  border: 1px solid red;
+  -webkit-box-shadow: 0px 2px 5px 0px #ff00004f;
+          box-shadow: 0px 2px 5px 0px #ff00004f;
+}
+
 #shareSection .section-form form button {
   border: none;
   background-color: #1d82ff;
@@ -454,7 +453,7 @@ footer p {
 /* MEDIA QUERIES */
 @media (min-width: 320px) and (max-width: 375px) {
   body header {
-    height: 75vh;
+    height: 50vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
@@ -462,7 +461,7 @@ footer p {
 
 @media (width: 375px) {
   body header {
-    height: 65vh;
+    height: 50vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
@@ -470,7 +469,7 @@ footer p {
 
 @media (min-width: 425px) and (max-width: 768px) {
   body header {
-    height: 60vh;
+    height: 50vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }

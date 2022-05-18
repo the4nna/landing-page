@@ -14,7 +14,7 @@ body {
     /* HEADER */
     header {
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         background-color: #665fee;
         background: linear-gradient(45deg, #665fee 0%, #27c2de 100%);
         clip-path: polygon(0 0, 100% 0%, 260% 35%, 0 88%);
@@ -133,6 +133,13 @@ body {
                     border: none;
                     padding: 6px;
                     border-radius: 2px;
+
+                    
+                }
+
+                .inputError {
+                    border: 1px solid red;
+                    box-shadow: 0px 2px 5px 0px #ff00004f;
                 }
 
                 select {
@@ -236,7 +243,8 @@ body {
                 border: none;
                 background: transparent;
                 align-self: flex-end;
-                margin-right: 15px;
+                margin-top: -58px;
+                margin-right: 45px;
                 cursor: pointer;
             }
         }
@@ -260,17 +268,9 @@ body {
             cursor: pointer;
         }
     }
-    #installmentDiv {
-        position: fixed;
-        display: none;
-        top: 0; bottom: 0; left: 0; right: 0;
-        margin: auto;
-        width: 200px;
-        height: 180px;
-        padding: 15px;
-        background-color: red;
-    }
+
 }
+
 
 
     /* SHARE SECTION */ 
@@ -336,6 +336,11 @@ body {
                     border-radius: 2px;
                 }
 
+                .inputError {
+                    border: 1px solid red;
+                    box-shadow: 0px 2px 5px 0px #ff00004f;
+                }
+                
                 button {
                     border: none;
                     background-color: #1d82ff;
@@ -377,7 +382,7 @@ body {
 @media (min-width: 320px) and (max-width: 375px) {
     body {
         header {
-            height: 75vh;
+            height: 50vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
         }
     }
@@ -386,7 +391,7 @@ body {
 @media (width: 375px) {
     body {
         header {
-            height: 65vh;
+            height: 50vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
         }
     }
@@ -395,7 +400,7 @@ body {
 @media (min-width: 425px) and (max-width: 768px) {
     body {
         header {
-            height: 60vh;
+            height: 50vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
         }
     }

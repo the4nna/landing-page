@@ -1,54 +1,128 @@
 const productsContainer = document.getElementById("productsContainer")
+const registerForm = document.getElementById("registerForm")
+const shareForm = document.getElementById("shareForm")
+
+registerForm.addEventListener('submit', function(e) {
+    sendData(e)
+})
+
+function sendData(e) {
+    e.preventDefault()
+
+    let haveError = false
+    let inputName = document.forms['registerForm']['name']
+
+    if(!inputName.value) {
+        haveError = true
+        inputName.classList.add('inputError')
+    } else {
+        inputName.classList.remove('inputError')
+    }
+
+    let inputEmail = document.forms['registerForm']['email']
+
+    if(!inputEmail.value) {
+        haveError = true
+        inputEmail.classList.add('inputError')
+    } else {
+        inputEmail.classList.remove('inputError')
+    }
+
+    let inputCPF = document.forms['registerForm']['cpf']
+
+    if(!inputCPF.value) {
+        haveError = true
+        inputCPF.classList.add('inputError')
+    } else {
+        inputCPF.classList.remove('inputError')
+    }
+
+    let selectGender = document.forms['registerForm']['gender']
+
+    if(!selectGender.value) {
+        haveError = true
+        selectGender.classList.add('inputError')
+    } else {
+        selectGender.classList.remove('inputError')
+    }
+
+    if(!haveError) {
+        registerForm.submit()
+    }
+}
+
+shareForm.addEventListener('submit', function(e) {
+    friendData(e)
+})
+
+function friendData(e) {
+    e.preventDefault()
+
+    let haveError = false
+    let inputName = document.forms['shareForm']['name']
+
+    if(!inputName.value) {
+        haveError = true
+        inputName.classList.add('inputError')
+    } else {
+        inputName.classList.remove('inputError')
+    }
+
+    let inputEmail = document.forms['shareForm']['email']
+
+    if(!inputEmail.value) {
+        haveError = true
+        inputEmail.classList.add('inputError')
+    } else {
+        inputEmail.classList.remove('inputError')
+    }
+    if(!haveError) {
+        registerForm.submit()
+    }
+}
 
 
 function htmlProducts(data) {
     const productList = data.products
     productsContainer.innerHTML = ''
     productList.forEach(product => {
-        const productDiv = document.createElement("div")
 
-
+        const productDiv = document.createElement('div')
         productDiv.classList.add('productDiv')
     
         productDiv.innerHTML = `
         <img src="${product.image}" class="productImg">  <img> 
         <h3 class="productName"> ${product.name} </h3> 
-        <p class="productDescription"> ${product.description} </p> 
+        <p class="productDescription"> ${product.description} </p>
         <span class="productPrice"> <s> $ ${product.oldPrice}.00 </s> </span> <br>
         <span class="productPrice"> $ ${product.price}.00 </span> 
         <button class="buyButton"> Comprar </button>
         `
+
+        const installmentsDiv = document.createElement('div')
+        installmentsDiv.style.display = 'none'
+        productDiv.insertBefore(installmentsDiv, productDiv.children[4])
+        installmentsDiv.innerHTML = `<span class="installmentSpan"> ou ${product.installments.count} de R$${product.installments.value} </span>`
+        installmentsDiv.addEventListener('click', function() {
+            installmentsDiv.style.display = 'none'
+        })
+
         
         const buttonInstallment = document.createElement('button')
         buttonInstallment.classList.add('installmentButton')
         buttonInstallment.innerHTML = '<i class="fa-solid fa-percent"></i>'
         productDiv.appendChild(buttonInstallment)
         buttonInstallment.addEventListener('click', function() {
-            installmentPop(product.installments)
+            productDiv.children[4].style.display = 'none'
+            
+            installmentsDiv.style.display = 'block'
         })
 
         productsContainer.appendChild(productDiv)
     });
 }
 
-function returnJSON(response) {
-    return response.json()
-}
 
-function installmentPop(installment) {
-    const installmentDiv = document.getElementById("installmentDiv")
-    installmentDiv.style.display = 'block'
-    
-    installmentDiv.innerHTML = ''
-
-    installmentDiv.innerHTML = `<h3> ${installment.count} ${installment.value}</h3>`
-}
-
-const installmentDiv = document.getElementById("installmentDiv")
-installmentDiv.addEventListener('click', function(e){
-    e.currentTarget.style.display = 'none'
-    e.currentTarget.innerHTML = ''
-}) 
 
 function errorEvt() {
     alert('Aconteceu um erro')
