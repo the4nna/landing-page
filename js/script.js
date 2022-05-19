@@ -114,7 +114,6 @@ function htmlProducts(data) {
         productDiv.appendChild(buttonInstallment)
         buttonInstallment.addEventListener('click', function() {
             productDiv.children[4].style.display = 'none'
-            
             installmentsDiv.style.display = 'block'
         })
 
@@ -162,6 +161,3 @@ function urlLoad(pageNumber) {
         xhttp.send()
     })
 }
-
-
-

@@ -198,15 +198,19 @@ body main .main-form form button {
   border-radius: 20px;
   -webkit-box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
           box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
-  margin-top: 35px;
+  margin-top: 40px;
   padding: 8px;
   cursor: pointer;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 body main .main-form form button:hover {
-  background-color: #2833cefb;
-  -webkit-box-shadow: 0px 3px 11px 0px #2833cefb;
-          box-shadow: 0px 3px 11px 0px #2833cefb;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: #1d82ffb5;
+  -webkit-box-shadow: 0px 3px 11px 0px #1d82ffb5;
+          box-shadow: 0px 3px 11px 0px #1d82ffb5;
 }
 
 /* PRODUCT SECTION */
@@ -306,18 +310,28 @@ body main .main-form form button:hover {
   margin-top: 35px;
 }
 
-#productSection .divNextPage #buttonNextPage {
+#productSection .divNextPage button {
   border: none;
   background-color: #1d82ffb5;
   color: white;
   font-family: 'Montserrat';
-  font-size: 0.8em;
+  font-size: 0.9em;
   border-radius: 20px;
   -webkit-box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
           box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
-  margin-top: 5px;
-  padding: 10px 50px;
+  margin-top: 45px;
+  padding: 8px;
   cursor: pointer;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+#productSection .divNextPage button:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: #1d82ff;
+  -webkit-box-shadow: 0px 3px 11px 0px #1d82ffb5;
+          box-shadow: 0px 3px 11px 0px #1d82ffb5;
 }
 
 /* SHARE SECTION */
@@ -428,12 +442,16 @@ body main .main-form form button:hover {
   margin-bottom: -20px;
   padding: 8px;
   cursor: pointer;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 #shareSection .section-form form button:hover {
-  background-color: #2833cefb;
-  -webkit-box-shadow: 0px 3px 11px 0px #2833cefb;
-          box-shadow: 0px 3px 11px 0px #2833cefb;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: #1d82ffb5;
+  -webkit-box-shadow: 0px 3px 11px 0px #1d82ffb5;
+          box-shadow: 0px 3px 11px 0px #1d82ffb5;
 }
 
 footer {
@@ -453,7 +471,7 @@ footer p {
 /* MEDIA QUERIES */
 @media (min-width: 320px) and (max-width: 375px) {
   body header {
-    height: 50vh;
+    height: 80vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
@@ -461,7 +479,7 @@ footer p {
 
 @media (width: 375px) {
   body header {
-    height: 50vh;
+    height: 60vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
@@ -469,7 +487,7 @@ footer p {
 
 @media (min-width: 425px) and (max-width: 768px) {
   body header {
-    height: 50vh;
+    height: 60vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
@@ -500,7 +518,27 @@ footer p {
     width: 35vw;
   }
   body #productSection {
-    padding: 30px 105px;
+    margin: 20px 60px;
+    height: 850px;
+  }
+  body #productSection h2 {
+    margin-bottom: 40px;
+  }
+  body #productSection #productsContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #productSection #productsContainer .productDiv {
+    width: 260px;
+  }
+  body #productSection .divNextPage #buttonNextPage {
+    margin-top: 15px;
+    padding: 9px 72px;
+    font-size: 0.9em;
   }
   body #shareSection {
     height: 60vh;
