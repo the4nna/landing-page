@@ -7,6 +7,8 @@
   <img src="https://img.shields.io/github/forks/the4nna/landing-page?color=purple">
 </p>
 
+<a href="https://the4nna.github.io/landing-page/"> Github Pages </a>
+
 <h3> Descrição do Projeto </h3>
   <p> Nesse projeto tive como desafio criar uma landing page usando HTML, CSS, JS puro e o consumo de uma  <a href="https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1"> API. </a> O projeto consiste em desenvolver uma página funcional com um HTML semântico e boas práticas de linguagem. </p>
 
