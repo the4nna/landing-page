@@ -1,90 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Landing Page </title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <script src="https://kit.fontawesome.com/eccb42ae3e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-    <header role="banner" id="top">
-        <div class="header-text">
-            <h2> Uma seleção de produtos <h3> especial para você </h3> </h2>
-            <p> Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+        <script
+            src="https://kit.fontawesome.com/eccb42ae3e.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header role="banner" id="top">
+            <div class="header-text">
+                <h2>
+                    Uma seleção de produtos
+                    <h3>especial para você</h3>
+                </h2>
+                <p>
+                    Todos os produtos desta lista foram selecionados a partir da
+                    sua navegação. Aproveite!
+                </p>
+            </div>
 
-        <div class="header-nav">
-            <nav role="navigation" aria-label="Menu">
-                <ul>
-                    <li> <a href="#top"> Conheça a Linx </a> </li>
-                    <li> <a href="#main"> Ajude o algoritmo </a> </li>
-                    <li> <a href="#productSection"> Seus produtos </a> </li>
-                    <li> <a href="#shareSection"> Compartilhe </a> </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <div class="header-nav">
+                <nav role="navigation" aria-label="Menu">
+                    <ul>
+                        <li><a href="#top"> Conheça a Linx </a></li>
+                        <li><a href="#main"> Ajude o algoritmo </a></li>
+                        <li><a href="#productSection"> Seus produtos </a></li>
+                        <li><a href="#shareSection"> Compartilhe </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main role="main" id="main">
-        <div class="main-text">
-            <h2>Ajude o Algoritmo a ser mais certeiro <a href="#main"> <i class="fa-solid fa-angle-down"> </i> </a> </h2> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend. </p>
-        </div>
+        <main role="main" id="main">
+            <div class="main-text">
+                <h2>
+                    Ajude o Algoritmo a ser mais certeiro
+                    <a href="#main">
+                        <i class="fa-solid fa-angle-down"> </i>
+                    </a>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque ultricies tellus nec mi porta convallis
+                    sollicitudin eu urna. Mauris rhoncus erat sed interdum
+                    dignissim. Suspendisse semper pretium consectetur. Praesent
+                    bibendum arcu risus, sit amet iaculis ex tempus quis. Cras
+                    et erat ut tellus vulputate tincidunt. Aenean lacinia
+                    euismod augue vel egestas. Class aptent taciti sociosqu ad
+                    litora torquent per conubia nostra, per inceptos himenaeos.
+                    Vestibulum vel urna tortor. Vivamus et arcu non felis
+                    tristique eleifend.
+                </p>
+            </div>
 
-        <div class="main-form">
-                <form action="get" role="form" aria-label="Formulário" id="registerForm">
-                <h2> Inscreva-se </h2>
-                <input type="text" name="name" placeholder="Nome"> <br>
-                <input type="text" name="email" placeholder="E-mail"> <br>
-                <input type="text" name="cpf" placeholder="CPF"> <br>
-                <select name="gender" id="gender">
-                    <option value=""> Gênero </option>
-                    <option value="masc"> Masculino </option>
-                    <option value="fem"> Feminino </option>
-                </select>
-                <button type="submit" class="submitBtn"> Enviar </button>
+            <div class="main-form">
+                <form
+                    action="get"
+                    role="form"
+                    aria-label="Formulário"
+                    id="registerForm"
+                >
+                    <h2>Inscreva-se</h2>
+                    <input type="text" name="name" placeholder="Nome" /> <br />
+                    <input type="text" name="email" placeholder="E-mail" />
+                    <br />
+                    <input type="text" name="cpf" placeholder="CPF" /> <br />
+                    <select name="gender" id="gender">
+                        <option value="">Gênero</option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                    </select>
+                    <button type="submit" class="submitBtn">Enviar</button>
                 </form>
-        </div>
-    </main>
+            </div>
+        </main>
 
-    <section role="contentinfo" aria-label="Produtos" id="productSection"> 
-        <h2> Seus produtos <a href="#productSection"> <i class="fa-solid fa-angle-down"></i> </a> </h2>
-        <div id="productsContainer">          
-        </div>
-        <div class="divNextPage">
-            <button id="buttonNextPage" onclick="loadMore()" type="submit"> Mais produtos </button>
-        </div>
-        <div id="installmentDiv"> </div>
-    </section>
+        <section role="contentinfo" aria-label="Produtos" id="productSection">
+            <h2>
+                Seus produtos
+                <a href="#productSection">
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </h2>
+            <div id="productsContainer"></div>
+            <div class="divNextPage">
+                <button id="buttonNextPage" onclick="loadMore()" type="submit">
+                    Mais produtos
+                </button>
+            </div>
+            <div id="installmentDiv"></div>
+        </section>
 
-    <section role="contentinfo" aria-label="Compartilhar" id="shareSection">
-        <div class="section-text">
-            <h2> Compartilhe a novidade <a href="#shareSection"> <i class="fa-solid fa-angle-down"></i> </a> </h2>
-            <p> Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora! </p>
-        </div>
+        <section role="contentinfo" aria-label="Compartilhar" id="shareSection">
+            <div class="section-text">
+                <h2>
+                    Compartilhe a novidade
+                    <a href="#shareSection">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </h2>
+                <p>
+                    Quer que seus amigos também ganhem a lista personalizada
+                    deles? Preencha agora!
+                </p>
+            </div>
 
-        <div class="section-form">
-            <form action="get" role="form" aria-label="Formulário" id="shareForm">
-                <h2> Compartilhar </h2>
-                <label for="name"> Nome do seu amigo </label>
-                <input type="text" name="name"> <br>
-                <label for="name"> E-mail dele </label> 
-                <input type="text" name="email"> <br>
-                <button type="submit" id="submitBtn"> Enviar agora </button>
-            </form>
-        </div>
-    </section>
+            <div class="section-form">
+                <form
+                    action="get"
+                    role="form"
+                    aria-label="Formulário"
+                    id="shareForm"
+                >
+                    <h2>Compartilhar</h2>
+                    <label for="name"> Nome do seu amigo </label>
+                    <input type="text" name="name" /> <br />
+                    <label for="name"> E-mail dele </label>
+                    <input type="text" name="email" /> <br />
+                    <button type="submit" id="submitBtn">Enviar agora</button>
+                </form>
+            </div>
+        </section>
 
-    <footer role="contentinfo" aria-label="Rodapé">
-        <p> Testando suas habilidades em HTML, CSS e JS </p>
-        <p> the4nna for FFSJS </p>
-        <p> 2022 </p>
-    </footer>
+        <footer role="contentinfo" aria-label="Rodapé">
+            <p>Testando suas habilidades em HTML, CSS e JS</p>
+            <p>the4nna for FFSJS</p>
+            <p>2022</p>
+        </footer>
 
-    <script src="./js/script.js"></script>
-</body>
+        <script src="./js/script.js"></script>
+    </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&display=swap");
 
 * {
     margin: 0;
@@ -6,9 +6,8 @@
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #fff;
 
     /* HEADER */
@@ -32,12 +31,11 @@ body {
                 font-weight: bold;
             }
             p {
-                font-family: 'Open Sans';
+                font-family: "Open Sans";
                 font-size: 0.9em;
                 color: white;
                 font-weight: 400;
                 padding-top: 10px;
-                
             }
         }
         .header-nav {
@@ -93,17 +91,17 @@ body {
                 font-size: 1.2em;
                 color: grey;
                 i {
-                        color: #27c2de;
-                        margin: 8px;
+                    color: #27c2de;
+                    margin: 8px;
                 }
             }
-                p {
-                    font-family: 'Open Sans';
-                    font-size: 0.9em;
-                    margin-top: 5px;
-                    color: rgb(161, 161, 161);
-                }
+            p {
+                font-family: "Open Sans";
+                font-size: 0.9em;
+                margin-top: 5px;
+                color: rgb(161, 161, 161);
             }
+        }
 
         .main-form {
             display: flex;
@@ -123,18 +121,16 @@ body {
                     font-size: 1.1em;
                     color: grey;
                     text-align: center;
-                    margin-bottom: 11px;                    
+                    margin-bottom: 11px;
                 }
 
                 input {
-                    font-family: 'Montserrat';
+                    font-family: "Montserrat";
                     background-color: #ededed;
                     box-shadow: 0px 2px 10px 0px #00000029;
                     border: none;
                     padding: 6px;
                     border-radius: 2px;
-
-                    
                 }
 
                 .inputError {
@@ -143,7 +139,7 @@ body {
                 }
 
                 select {
-                    font-family: 'Montserrat';
+                    font-family: "Montserrat";
                     background-color: #ededed;
                     box-shadow: 0px 2px 10px 0px #00000029;
                     border: none;
@@ -151,12 +147,11 @@ body {
                     border-radius: 2px;
                 }
 
-
                 button {
                     border: none;
                     background-color: #1d82ff;
                     color: white;
-                    font-family: 'Montserrat';
+                    font-family: "Montserrat";
                     font-size: 0.9em;
                     border-radius: 20px;
                     box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
@@ -170,43 +165,42 @@ body {
                         background: #1d82ffb5;
                         box-shadow: 0px 3px 11px 0px #1d82ffb5;
                     }
-                } 
+                }
             }
         }
     }
 }
 
-    /* PRODUCT SECTION */
-    #productSection {
-        height: 2380px;
-        margin-top: 50px;
-        padding: 30px;
-        background-color: white;
-        clip-path: polygon(0 0, 100% 0%, 270% 110%, 0 95%);
+/* PRODUCT SECTION */
+#productSection {
+    height: 2380px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0%, 270% 110%, 0 95%);
 
-        h2 {
-            font-size: 1.1em;
-            color: #525252;
+    h2 {
+        font-size: 1.1em;
+        color: #525252;
+        margin-bottom: 20px;
+    }
+    i {
+        color: #27c2de;
+        margin: 4px 6px;
+        font-size: 1em;
+    }
+
+    #productsContainer {
+        .productDiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 55vw;
+            height: 250px;
+            padding: 0px 10px;
+            margin: 0 auto;
             margin-bottom: 20px;
-        }
-        i {
-            color: #27c2de;
-            margin: 4px 6px;
-            font-size: 1em;
-        }
-
-        #productsContainer {
-
-            .productDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 55vw;
-                height: 250px;
-                padding: 0px 10px;
-                margin: 0 auto;
-                margin-bottom: 20px;
-                box-shadow: 0px 4px 16px 0px #00000029;
+            box-shadow: 0px 4px 16px 0px #00000029;
 
             .productImg {
                 width: 100px;
@@ -223,7 +217,9 @@ body {
 
             .productPrice {
                 font-size: 0.9em;
-                &:last-of-type{
+                height: 19px;
+
+                &:last-of-type {
                     margin-top: -20px;
                 }
             }
@@ -232,7 +228,7 @@ body {
                 border: none;
                 background-color: #1d82ff;
                 color: white;
-                font-family: 'Montserrat';
+                font-family: "Montserrat";
                 font-size: 0.8em;
                 border-radius: 20px;
                 box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
@@ -241,6 +237,9 @@ body {
                 cursor: pointer;
             }
 
+            .installmentsDiv {
+                text-align: center;
+            }
             .installmentButton {
                 border: none;
                 background: transparent;
@@ -248,6 +247,11 @@ body {
                 margin-top: -58px;
                 margin-right: 45px;
                 cursor: pointer;
+            }
+
+            .installmentSpan {
+                font-size: 0.9em;
+                height: 19px;
             }
         }
     }
@@ -257,17 +261,15 @@ body {
         justify-content: center;
         margin-top: 35px;
 
-
         button {
             border: none;
             background-color: #1d82ffb5;
             color: white;
-            font-family: 'Montserrat';
-            font-size: 0.9em;
+            font-family: "Montserrat";
+            font-size: 0.8em;
+            padding: 9px 27px;
             border-radius: 20px;
             box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
-            margin-top: 45px;
-            padding: 8px;
             cursor: pointer;
             transition: 1s ease-in-out;
 
@@ -277,116 +279,113 @@ body {
                 box-shadow: 0px 3px 11px 0px #1d82ffb5;
             }
         }
-    } 
+    }
 }
 
+/* SHARE SECTION */
+#shareSection {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    padding: 30px;
+    background-color: white;
 
+    .section-text {
+        margin-top: -30px;
 
-    /* SHARE SECTION */ 
-    #shareSection {
+        h2 {
+            display: flex;
+            font-size: 1.1em;
+            color: grey;
+            i {
+                color: #27c2de;
+                margin: 4px 8px;
+            }
+        }
+        p {
+            font-family: "Open Sans";
+            font-size: 0.9em;
+            margin-top: 5px;
+            color: #a1a1a1;
+        }
+    }
+    .section-form {
         display: flex;
-        flex-direction: column;
-        height: 90vh;
-        padding: 30px;
-        background-color: white;
+        justify-content: center;
+        margin-top: 60px;
 
-        .section-text {
-            margin-top: -30px;
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 65vw;
+            height: 50vh;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0px 4px 16px 0px #00000029;
 
             h2 {
-                display: flex;
                 font-size: 1.1em;
                 color: grey;
-                i {
-                    color: #27c2de;
-                    margin: 4px 8px;
-                }
-        }
-            p {
-                font-family: 'Open Sans';
+                text-align: center;
+                margin-top: -20px;
+                margin-bottom: 40px;
+            }
+
+            label {
+                font-size: 0.8em;
+                color: darkslategray;
+            }
+
+            input {
+                background-color: #ededed;
+                box-shadow: 0px 2px 10px 0px #00000029;
+                border: none;
+                padding: 6px;
+                border-radius: 2px;
+            }
+
+            .inputError {
+                border: 1px solid red;
+                box-shadow: 0px 2px 5px 0px #ff00004f;
+            }
+
+            button {
+                border: none;
+                background-color: #1d82ff;
+                color: white;
+                font-family: "Montserrat";
                 font-size: 0.9em;
-                margin-top: 5px;
-                color: #a1a1a1;
-        }
-    }
-        .section-form {
-            display: flex;
-            justify-content: center;
-            margin-top: 60px;
+                border-radius: 20px;
+                box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
+                margin-top: 20px;
+                margin-bottom: -20px;
+                padding: 8px;
+                cursor: pointer;
+                transition: 1s ease-in-out;
 
-            form {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 65vw;
-                height: 50vh;
-                padding: 30px;
-                background-color: white;
-                box-shadow: 0px 4px 16px 0px #00000029;
-
-                h2 {
-                    font-size: 1.1em;
-                    color: grey;
-                    text-align: center;
-                    margin-top: -20px;
-                    margin-bottom: 40px;
+                &:hover {
+                    transition: 0.5s ease-in-out;
+                    background: #1d82ffb5;
+                    box-shadow: 0px 3px 11px 0px #1d82ffb5;
                 }
-
-                label {
-                    font-size: 0.8em;
-                    color: darkslategray;
-                }
-
-                input {
-                    background-color: #ededed;
-                    box-shadow: 0px 2px 10px 0px #00000029;
-                    border: none;
-                    padding: 6px;
-                    border-radius: 2px;
-                }
-
-                .inputError {
-                    border: 1px solid red;
-                    box-shadow: 0px 2px 5px 0px #ff00004f;
-                }
-
-                button {
-                    border: none;
-                    background-color: #1d82ff;
-                    color: white;
-                    font-family: 'Montserrat';
-                    font-size: 0.9em;
-                    border-radius: 20px;
-                    box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
-                    margin-top: 20px;
-                    margin-bottom: -20px;
-                    padding: 8px;
-                    cursor: pointer;
-                    transition: 1s ease-in-out;
-
-                    &:hover {
-                        transition: 0.5s ease-in-out;
-                        background: #1d82ffb5;
-                        box-shadow: 0px 3px 11px 0px #1d82ffb5;
-                }
-            } 
+            }
         }
     }
 }
 
-    footer {
-        padding-top: 65px;
-        background-color: #ededed;
-        clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+footer {
+    padding-top: 65px;
+    background-color: #ededed;
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
 
-        p {
-            text-align: center;
-            font-family: 'Open Sans';
-            font-size: 0.7em;
-            color: darkslategray;
-        }
+    p {
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 0.7em;
+        color: darkslategray;
     }
-
+}
 
 /* MEDIA QUERIES */
 
@@ -395,6 +394,19 @@ body {
         header {
             height: 80vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
+        }
+
+        #productSection {
+            #productsContainer {
+                .productDiv {
+                    height: 260px;
+                    width: 60vw;
+
+                    .installmentButton {
+                        margin-right: 25px;
+                    }
+                }
+            }
         }
     }
 }
@@ -405,6 +417,16 @@ body {
             height: 60vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
         }
+
+        #productSection {
+            #productsContainer {
+                .productDiv {
+                    .installmentButton {
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -413,6 +435,19 @@ body {
         header {
             height: 60vh;
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
+        }
+
+        #productSection {
+            #productsContainer {
+                .productDiv {
+                    .productDescription {
+                        margin-bottom: 10px;
+                    }
+                    .installmentButton {
+                        margin-right: 135px;
+                    }
+                }
+            }
         }
     }
 }
@@ -439,7 +474,6 @@ body {
             .main-text {
                 width: 45vw;
                 word-break: break-word;
-                
             }
 
             .main-form {
@@ -451,7 +485,7 @@ body {
             margin: 20px 60px;
             height: 850px;
 
-            h2{ 
+            h2 {
                 margin-bottom: 40px;
             }
 
@@ -472,9 +506,6 @@ body {
                 }
             }
         }
-
-        
-        
 
         #shareSection {
             height: 60vh;
