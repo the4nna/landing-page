@@ -163,6 +163,10 @@ body main .main-form form h2 {
   margin-bottom: 11px;
 }
 
+body main .main-form form label {
+  display: none;
+}
+
 body main .main-form form input {
   font-family: "Montserrat";
   background-color: #ededed;
