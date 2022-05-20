@@ -89,7 +89,7 @@ function htmlProducts(data) {
         productDiv.classList.add("productDiv")
 
         productDiv.innerHTML = `
-        <img src="${product.image}" class="productImg" alt="produtos">  <img> 
+        <img src="${product.image}" class="productImg" alt="${product.name}">  <img> 
         <h3 class="productName"> ${product.name} </h3> 
         <p class="productDescription"> ${product.description} </p>
         <div class="productPrice"> <s> $ ${product.oldPrice}.00 </s> </div>  <br>
