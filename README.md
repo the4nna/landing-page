@@ -26,8 +26,11 @@
     <p> Compartilhar: similar a seção de "Inscreva-se". </p>
   </li>
   
+  <h3> Conclusão </h3>
+    <p> Este é o meu maior projeto até agora. Passei alguns dias desenvolvendo e deixando o mais semântico e acessível o possível. Tive algumas dificuldades com a acessibilidade e em criar um design responsivo, porém pude aprender e me aprofundar ainda mais nos estudos de programação. </p>
+  
 <h3> Lighthouse Report </h3>
-  <img src="https://user-images.githubusercontent.com/69096673/169600532-7f013fc3-dd4c-4ba1-b43a-7ae01d699e68.png" width="600px">
+  <img src="https://user-images.githubusercontent.com/69096673/169600532-7f013fc3-dd4c-4ba1-b43a-7ae01d699e68.png" width="550px">
 
 
 <h4> README em desenvolvimento... </h4>
