@@ -32,5 +32,3 @@
 <h3> Lighthouse Report </h3>
   <img src="https://user-images.githubusercontent.com/69096673/169600532-7f013fc3-dd4c-4ba1-b43a-7ae01d699e68.png" width="550px">
 
-
-<h4> README em desenvolvimento... </h4>
