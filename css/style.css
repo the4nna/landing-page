@@ -484,6 +484,9 @@ footer p {
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
   }
+  body #productSection {
+    height: 2480px;
+  }
   body #productSection #productsContainer .productDiv {
     height: 260px;
     width: 60vw;
@@ -498,6 +501,9 @@ footer p {
     height: 60vh;
     -webkit-clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
             clip-path: polygon(0 0, 100% 0%, 290% 35%, 0 88%);
+  }
+  body #productSection {
+    height: 2480px;
   }
   body #productSection #productsContainer .productDiv .installmentButton {
     margin-right: 40px;
