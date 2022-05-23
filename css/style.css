@@ -26,13 +26,13 @@ body header .header-text {
   padding: 20px;
 }
 
-body header .header-text h2 {
+body header .header-text h1 {
   font-size: 1.5em;
   color: white;
   font-weight: lighter;
 }
 
-body header .header-text h3 {
+body header .header-text h2 {
   font-size: 1.3em;
   color: white;
   font-weight: bold;
@@ -77,8 +77,8 @@ body header .header-nav nav li {
   margin-bottom: 8px;
   background: #fffffffa;
   border: 1px solid #665fee;
-  -webkit-box-shadow: 0px 6px 14px #630b915c;
-          box-shadow: 0px 6px 14px #630b915c;
+  -webkit-box-shadow: 0px 6px 14px rgba(99, 11, 147, 0.361);
+          box-shadow: 0px 6px 14px rgba(99, 11, 147, 0.361);
   border-radius: 8px;
 }
 
@@ -160,7 +160,7 @@ body main .main-form form h2 {
   font-size: 1.1em;
   color: grey;
   text-align: center;
-  margin-bottom: 11px;
+  margin-bottom: 22px;
 }
 
 body main .main-form form label {
@@ -172,6 +172,8 @@ body main .main-form form input {
   background-color: #ededed;
   -webkit-box-shadow: 0px 2px 10px 0px #00000029;
           box-shadow: 0px 2px 10px 0px #00000029;
+  margin: 0px 20px;
+  height: 35px;
   border: none;
   padding: 6px;
   border-radius: 2px;
@@ -188,6 +190,7 @@ body main .main-form form select {
   background-color: #ededed;
   -webkit-box-shadow: 0px 2px 10px 0px #00000029;
           box-shadow: 0px 2px 10px 0px #00000029;
+  margin: 0px 20px;
   border: none;
   padding: 6px;
   border-radius: 2px;
@@ -202,7 +205,7 @@ body main .main-form form button {
   border-radius: 20px;
   -webkit-box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
           box-shadow: 0px 3px 11px 0px rgba(77, 137, 226, 0.753);
-  margin-top: 40px;
+  margin-top: 25px;
   padding: 8px;
   cursor: pointer;
   -webkit-transition: 1s ease-in-out;
@@ -227,7 +230,7 @@ body main .main-form form button:hover {
           clip-path: polygon(0 0, 100% 0%, 270% 110%, 0 95%);
 }
 
-#productSection h2 {
+#productSection h1 {
   font-size: 1.1em;
   color: #525252;
   margin-bottom: 20px;
@@ -432,6 +435,7 @@ body main .main-form form button:hover {
   -webkit-box-shadow: 0px 2px 10px 0px #00000029;
           box-shadow: 0px 2px 10px 0px #00000029;
   border: none;
+  height: 35px;
   padding: 6px;
   border-radius: 2px;
 }
@@ -594,7 +598,7 @@ footer p {
     text-align: center;
   }
   body #shareSection .section-form form input {
-    height: 30px;
+    height: 35px;
   }
   body #shareSection .section-form form button {
     width: 50%;
